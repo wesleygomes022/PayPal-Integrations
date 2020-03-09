@@ -1,0 +1,9 @@
+Credenciais do WooCommerce:
+* Título do site: wooCommerceTeste;
+* Nome de usuário: wesleygomes022;
+* Senha: 123456;
+* E-mail: wgomes@paypal.com;
+
+Plugins:
+* Brazilian Market on WooCommerce (PP EC);
+* Checkout Transparente do PayPal (PP Plus);

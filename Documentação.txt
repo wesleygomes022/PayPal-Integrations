@@ -1,0 +1,102 @@
+<DOCUMENTAÇÃO DE TODO O BACK OFFICE> 
+
+- Endpoint Sanbox: https://api.sandbox.paypal.com
+- Endpoint Live: https://api.paypal.com
+
+Credenciais Admin
+user: wgomes
+pass: erase9sharp
+---------------------------------------------------------------------------------------------------------
+AWS CREDENCIAIS
+Login: wesleygomespaiva43@gmail.com 
+Senha: Pederoca5690120!
+---------------------------------------------------------------------------------------------------------
+CREDENCIAIS CORP
+Usuário: wgomes
+Senha: Sogalape569!
+---------------------------------------------------------------------------------------------------------
+
+Credencias Sandbox REST:
+- Conta Sandbox: wgomes@paypal.com;
+- Client ID: AXNvUshuj87EZ0aACSesxnx1EEOHU_IcmFFUPc6kXa9uAWMjW-0yqv7bAfc_VGcugZwQBlReyD3u-Vbp
+- Secrete ID: EPzYzMSxzh5KmoSCxyunB1VCAWeUK4UQLUme4njNao0O5cqaGGzaGgw_7l6tRZwE3uXws3mIRsChX-7k
+- Base64: QVhOdlVzaHVqODdFWjBhQUNTZXN4bngxRUVPSFVfSWNtRkZVUGM2a1hhOXVBV01qVy0weXF2N2JBZmNfVkdjdWdad1FCbFJleUQzdS1WYnAK:RVB6WXpNU3h6aDVLbW9TQ3h5dW5CMVZDQVdlVUs0VVFMVW1lNG5qTmFvME81Y3FhR0d6YUdnd183bDZ0Ulp3RTN1WHdzM21JUnNDaFgtN2s=
+
+Credencias Sandbox NVP:
+- Username: sb-e2yfi408566_api1.business.example.com
+- Password: 22VPV8KETHF3SC5P
+- Signature: A574AnRYwVI-eLtXUSUL15KwD9j5A3cDvLroT-8u-KOAFmWP2S0fdkVC
+---------------------------------------------------------------------------------------------------------
+
+Express Checkout - Single Transaction (NVP)
+- ecclassic.html (página de front);
+- setec.php (página back para fazer chamada de set);
+- getdoec.php (página de back para fazer chamada de get e do);
+- Library.php (classe com os métodos utilizados na chamada);
+
+---------------------------------------------------------------------------------------------------------
+
+Express checkout - Single Transaction (REST)
+- ec_rest.html (página de front);
+- createpayment.php (página de back para fazer chamada de oAuth e CreatePayment);
+- getpayment.php (página de back para fazer a chamada de GetPayment);
+- executepayment.php (página de back para fazer a chamada de CreatePayment);
+- Library.php (classe com os métodos utilizados na chamada);
+
+---------------------------------------------------------------------------------------------------------
+
+Reference Transaction (NVP)
+- reference_transaction.html (página de front);
+- set_ec_rt.php (página de back para fazer a chamada de SetExpressCheckout e GetExpressCheckoutDetails);
+- createBA.php (página de back para fazer a chamada de CreateBillingAgreement, DoReferenceTransaction, GetTransactionDetails);
+- Library.php (classe com os métodos utilizados na chamada);
+
+---------------------------------------------------------------------------------------------------------
+
+Reference Transaction (REST)
+- rt_rest.html (página de front);
+- createBA_rest.php (página de back para fazer a chamada de oAuth, CreateBillingAgreementToken);
+- createPaymentBA_rest (página de back para fazer a chamada de CreateBillingAgreement, CreatePaymentBillingAgreement);
+
+---------------------------------------------------------------------------------------------------------
+
+EC Recurring (NVP)
+- ec_recurring_nvp_set.php (página de back para fazer a chamada de SetExpressCheckout);
+- create_recurring_payments_profile.php (página de back para fazer chamadas de CreateRecurringPaymentsProfile);
+- manage_recurring_profile.php (página de back para fazer a chamada de ManageRecurringPaymentsProfileStatus);
+- update_recurring_profile.php (página de back para atualizar o perfil de recorrência);
+
+---------------------------------------------------------------------------------------------------------
+
+EC Recurring (Subscription)
+- ec_recurring_rest.html (página de front com o formulário para iniciar a chamada na página de create_plan);
+- create_plan.php (página de back para fazer a chamada de oAuth e Create a Plan);
+- active_plan.php (página de back para fazer a chamada de Activate a Plan);
+- create_agreement.php (página de back para criar um acordo de cobrança);
+- execute_agreement (página de back para executar a chamada de Execute an agreement);
+
+---------------------------------------------------------------------------------------------------------
+
+PayPal Plus 
+- pp_checkout.html (página de checkout com formulário para gerar o upload da chamada de Create Payment);
+- create_paym_pp.php (página para fazer a chamada de oAuth e Create Payment Request);
+- pp_plus.php (página de back para fazer o instanciamento do iframe);
+- execute_payment_pp.php (página de back para fazer a chamada de Execute Payment);
+
+---------------------------------------------------------------------------------------------------------
+
+SPB Server Side Integration - RT
+- rt_rest.html (página de front onde é instanciado o iframe);
+- spb_createBA.php (criação do Billing Agreement Token);
+- spb_execute.php (criação do Billing Agreement ID);
+
+---------------------------------------------------------------------------------------------------------
+
+SPB Server Side Integration - EC
+- spb_server_ec.html (página de front onde o botão foi renderizado);
+- cp_spb.php (página de back para fazer a chamada de CreatePayment);
+- expay_spb.php (páginad de back para fazer as chamadas de Get e ExecutePayment);
+---------------------------------------------------------------------------------------------------------
+
+BRAINTREE - DROP IN
+- bt_body.html;
