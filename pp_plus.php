@@ -178,7 +178,7 @@ function receiveMessage(event){
 <div id="ppplus"></div>
 
 
-<form id="PAYLOAD" method="POST" action="http://localhost/EC-ClassicAPI/PayPalExpressCheckout/execute_payment_pp.php"> 
+<form id="PAYLOAD" method="POST" action="https://wesleygomes022.herokuapp.com/execute_payment_pp.php"> 
   <input name="PAYERID" type="hidden" value="" id="PAYERID"/>
 </form>
 

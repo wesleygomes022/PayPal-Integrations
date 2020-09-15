@@ -100,7 +100,7 @@ $_SESSION['executePayment_endpoint'] = $_SESSION['createPayment']['links'][2]['h
 //var_dump($_SESSION['createPayment']);
 
 $_SESSION['approval_url'] = $_SESSION['createPayment']['links'][1]['href'];
-$redirectUrl = "http://localhost/EC-ClassicAPI/PayPalExpressCheckout/pp_plus.php";
+$redirectUrl = "https://wesleygomes022.herokuapp.com/pp_plus.php";
 
 print_r($_SESSION['createPayment']);
 

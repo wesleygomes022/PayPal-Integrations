@@ -15,8 +15,8 @@ $executePayment_postfields = json_encode($executePayment_postfields_array);
 $executePayment = $libraryObj->curlRest($_SESSION['executePayment_endpoint'], $executePayment_postfields, $executePayment_header);
 print_r($executePayment);
 $state = $executePayment['transactions'][0]['related_resources'][0]['sale']['state'];
-$succesUrl = "http://localhost/EC-ClassicAPI/PayPalExpressCheckout/success-url.html";
-$cancelUrl = "http://localhost/EC-ClassicAPI/PayPalExpressCheckout/cancel-url.html";
+$succesUrl = "https://wesleygomes022.herokuapp.com/success-url.html";
+$cancelUrl = "https://wesleygomes022.herokuapp.com/cancel-url.html";
 
 /*
 Anotações: Essa intregração de PayPal Plus atualmente possui uma limitação, ela apenas processa pagamentos com cartões que sejam
@@ -30,13 +30,13 @@ Outro detalhe incompreensível é o fato do usuário do Pedro estar sendo consid
 de "Payee". 
 */
 
-/*if($state == "completed")
+if($state == "completed")
 {
     //header('Location: '.$succesUrl);
 }
 else
 {
     //header('Location: '.$cancelUrl);
-}*/
+}
 
 ?>
