@@ -24,7 +24,7 @@ $jsonCBAT = "{\r\n    \"description\": \"Billing Agreement\",\r\n    \"payer\"
   :\r\n    {\r\n        \"type\"
   : \"MERCHANT_INITIATED_BILLING_SINGLE_AGREEMENT\",\r\n        \"merchant_preferences\"
   :\r\n        {\r\n            \"return_url\"
-  : \"http://localhost/EC-ClassicAPI/PayPalExpressCheckout/createPaymentBA_rest.php\",\r\n            \"cancel_url\"
+  : \"https://wesleygomes022.herokuapp.com/createPaymentBA_rest.php\",\r\n            \"cancel_url\"
   : \"cctexample://return\",\r\n            \"accepted_pymt_type\"
   : \"INSTANT\",\r\n            \"skip_shipping_address\"
   : true\r\n        }\r\n    }\r\n}";
@@ -42,7 +42,7 @@ $createBATokenHeader = array(
 $baToken = $libraryObj->curlRest($createBATokenURL, $jsonCBAT, $createBATokenHeader);
 $_SESSION['token'] = $baToken['token_id'];
 //$_SESSION['token'];
-//header('Location: http://localhost/EC-ClassicAPI/PayPalExpressCheckout/spb_execute.php');
+//header('Location: https://wesleygomes022.herokuapp.com/spb_execute.php');
 echo $_SESSION['token'];
 
 ?>

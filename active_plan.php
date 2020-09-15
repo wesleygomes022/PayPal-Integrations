@@ -24,7 +24,7 @@ $activate_postfields = json_encode($activate_postfields_array);
 $activate_plan = $libraryObj->curlRestPatch($activate_URL, $activate_postfields, $activate_header);
 
 $headers = get_headers($activate_URL, true);
-$crate_agreement_url = "http://localhost/EC-ClassicAPI/PayPalExpressCheckout/create_agreement.php";
+$crate_agreement_url = "https://wesleygomes022.herokuapp.com/create_agreement.php";
 
 if($activate_plan == NULL)
 {

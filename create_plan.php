@@ -59,7 +59,7 @@ $createPlan_array = array(
             "value" => 2,
             "currency" => "BRL"
         ),
-        "return_url" => "http://localhost/EC-ClassicAPI/PayPalExpressCheckout/execute_agreement.php",
+        "return_url" => "https://wesleygomes022.herokuapp.com/execute_agreement.php",
         "cancel_url" => "https://example.com/cancel",
         "auto_bill_amount" => "YES",
         "initial_fail_amount_action" => "CONTINUE",
@@ -69,7 +69,7 @@ $createPlan_array = array(
 
 $createPlan_postfields = json_encode($createPlan_array);
 $_SESSION['createPlan'] = $libraryObj->curlRest($createPlan_URL, $createPlan_postfields, $createPlan_header_array);
-$activePlan_URL = "http://localhost/EC-ClassicAPI/PayPalExpressCheckout/active_plan.php";
+$activePlan_URL = "https://wesleygomes022.herokuapp.com/active_plan.php";
 
 if(isset($_SESSION['createPlan']['id']) == true)
 {

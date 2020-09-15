@@ -53,8 +53,8 @@ $createPaymentPostfields = "{\r\n   \"intent\":\"sale\",\r\n   \"payer\"
 $createPaymentURL = "https://api.sandbox.paypal.com/v1/payments/payment";
 
 $createPaymentBA = $libraryObj->curlRest($createPaymentURL, $createPaymentPostfields, $createPaymentHeader);
-$successPage = "http://localhost/EC-ClassicAPI/PayPalExpressCheckout/success-url.html";
-$failPage = "http://localhost/EC-ClassicAPI/PayPalExpressCheckout/cancel-url.html";
+$successPage = "https://wesleygomes022.herokuapp.com/success-url.html";
+$failPage = "https://wesleygomes022.herokuapp.com/cancel-url.html";
 
 if($createPaymentBA['transactions'][0]['related_resources'][0]['sale']['state'] == "completed")
 {

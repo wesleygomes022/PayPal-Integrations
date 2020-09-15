@@ -8,8 +8,8 @@ $execute_agreement_header = array(
 );
 $execute_agreement_postfields = "";
 $execute_agreement = $libraryObj->curlRest($_SESSION['execute_url'], $execute_agreement_postfields, $execute_agreement_header);
-$succes_url = "http://localhost/EC-ClassicAPI/PayPalExpressCheckout/success-url.html";
-$cancel_url = "http://localhost/EC-ClassicAPI/PayPalExpressCheckout/cancel-url.html";
+$succes_url = "https://wesleygomes022.herokuapp.com/success-url.html";
+$cancel_url = "https://wesleygomes022.herokuapp.com/cancel-url.html";
 
 if(isset($execute_agreement['state']) == true)
 {

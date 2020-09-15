@@ -52,7 +52,7 @@ $getRecurringPostfields = array(
 $getRecurringPostfields = $libraryObj->curl($_SESSION['endpoint'], $getRecurringPostfields);
 $getRecurringPostfields_Array = $libraryObj->regex($getRecurringPostfields);
 
-$succesURL = "http://localhost/EC-ClassicAPI/PayPalExpressCheckout/success-url.html";
+$succesURL = "https://wesleygomes022.herokuapp.com/success-url.html";
 
 if(isset($getRecurringPostfields_Array['STATUS']) == true)
 {

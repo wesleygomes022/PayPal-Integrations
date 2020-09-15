@@ -46,11 +46,11 @@ $getTrnsDtls = $libraryObj->curl($_SESSION['endpoint'], $getTrnsDtlsPostfields);
 
 if($doRTArray['PAYMENTSTATUS'] == "Completed")
 {
-  header('Location: '."http://localhost/EC-ClassicAPI/PayPalExpressCheckout/success-url.html");
+  header('Location: '."https://wesleygomes022.herokuapp.com/success-url.html");
 }
 else
 {
-  header('Location: '."http://localhost/EC-ClassicAPI/PayPalExpressCheckout/cancel-url.html");
+  header('Location: '."https://wesleygomes022.herokuapp.com/cancel-url.html");
 }
 
 

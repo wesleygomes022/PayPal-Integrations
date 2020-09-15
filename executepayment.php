@@ -16,11 +16,11 @@ $execPay = $libraryObj->curlRest($execPayURL, $execPayPostfields, $execPayArray)
 
 if($execPay['transactions'][0]['related_resources'][0]['sale']['state'] == "completed")
 {
-  header('location: '."http://localhost/EC-ClassicAPI/PayPalExpressCheckout/success-url.html");
+  header('location: '."https://wesleygomes022.herokuapp.com/success-url.html");
 }
 else
 {
-  header('location: '."http://localhost/EC-ClassicAPI/PayPalExpressCheckout/cancel-url.html");
+  header('location: '."https://wesleygomes022.herokuapp.com/cancel-url.html");
 }
 
 

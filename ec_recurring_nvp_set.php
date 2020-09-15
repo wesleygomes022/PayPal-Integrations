@@ -6,7 +6,7 @@ $_SESSION['AMT'] = $_POST['total'];
 
 $libraryObj = new Library();
 $_SESSION['credentials'] = $libraryObj->getCredential("sandbox");
-$returnURL = "http://localhost/EC-ClassicAPI/PayPalExpressCheckout/create_recurring_payments_profile.php";
+$returnURL = "https://wesleygomes022.herokuapp.com/create_recurring_payments_profile.php";
 $_SESSION['endpoint'] = "https://api-3t.sandbox.paypal.com/nvp";
 $setPostfields = array(
     "METHOD"                         => "SetExpressCheckout",
@@ -27,7 +27,7 @@ $_SESSION['setArray'] = $libraryObj->regex($set);
 $paypalURL = "https://www.sandbox.paypal.com/cgi-bin/webscr";
 $pyplCheckout = $paypalURL.'?cmd=_express-checkout&useraction=commit&token='.$_SESSION['setArray']['TOKEN'];
 
-$_SESSION['cancelURL'] = "http://localhost/EC-ClassicAPI/PayPalExpressCheckout/cancel-url.html";
+$_SESSION['cancelURL'] = "https://wesleygomes022.herokuapp.com/cancel-url.html";
 
 if(isset($_SESSION['setArray']['TOKEN']) == true)
 {

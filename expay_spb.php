@@ -13,7 +13,7 @@ $getHeader = array(
 
 $_SESSION['get'] = $libraryObj->curlRestGet($getURL, $getHeader);
 //$_SESSION['payer_id'] = $_SESSION['get']['payer']['payer_info']['payer_id'];
-//$redirectUrl = "http://localhost/EC-ClassicAPI/PayPalExpressCheckout/executepayment.php";
+//$redirectUrl = "https://wesleygomes022.herokuapp.com/executepayment.php";
 //print_r($_SESSION['get']);
 //echo "<br/><br/><br/>";
 //echo $_SESSION['get']['payer']['payer_info']['payer_id'];

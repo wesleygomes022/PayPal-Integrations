@@ -21,7 +21,7 @@
       },
         payment: function(actions) {
           // 2. Make a request to your server
-          return actions.request.post('http://localhost/EC-ClassicAPI/PayPalExpressCheckout/spb_createBA.php', 'banana')
+          return actions.request.post('https://wesleygomes022.herokuapp.com/spb_createBA.php', 'banana')
             .then(function(res) {
               // 3. Return res.id from the response
               return res;
@@ -31,7 +31,7 @@
         // 1. Add an onAuthorize callback
         onAuthorize: function(data, actions) {
           // 2. Make a request to your server
-          return actions.request.post('http://localhost/EC-ClassicAPI/PayPalExpressCheckout/spb_execute.php', {
+          return actions.request.post('https://wesleygomes022.herokuapp.com/spb_execute.php', {
             paymentID: data.id
           })
             .then(function(res) {

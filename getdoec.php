@@ -38,11 +38,11 @@ $responseNvp2 = $library->regex($response2);
 
 if($responseNvp2['PAYMENTSTATUS'] == "Completed")
 { 
-	header('location: '."http://localhost/EC-ClassicAPI/PayPalExpressCheckout/success-url.html");
+	header('location: '."https://wesleygomes022.herokuapp.com/success-url.html");
 }
 else
 {
-	header('location: '."http://localhost/EC-ClassicAPI/PayPalExpressCheckout/cancel-url");
+	header('location: '."https://wesleygomes022.herokuapp.com/cancel-url");
 }
 
 

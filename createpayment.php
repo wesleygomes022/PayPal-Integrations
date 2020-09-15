@@ -33,7 +33,7 @@ $jsonCreatePayment = "{\r\n  \"intent\":\"sale\",\r\n  \"payer\":{  \r\n
   \"quantity\":\"$quantity\",\r\n            \"price\":\"$price\",\r\n    
   \"sku\":\"product_id\",\r\n            \"currency\":\"BRL\"\r\n      
   }\r\n          ]\r\n      }\r\n    }\r\n    ],\r\n    \"redirect_urls\":{
-  \r\n      \"return_url\":\"http://localhost/EC-ClassicAPI/PayPalExpressCheckout/getpayment.php\",\r\n 
+  \r\n      \"return_url\":\"https://wesleygomes022.herokuapp.com/getpayment.php\",\r\n 
   \"cancel_url\":\"http://www.example.com/cancel\"\r\n    }\r\n  }";
 
 //$err = curl_error($curl);
